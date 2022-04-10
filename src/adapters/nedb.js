@@ -43,7 +43,7 @@ class NeDBAdapter extends BaseAdapter {
 		super.init(service);
 
 		try {
-			Datastore = require("nedb");
+			Datastore = require("@seald-io/nedb");
 		} catch (err) {
 			/* istanbul ignore next */
 			this.broker.fatal(
@@ -53,7 +53,7 @@ class NeDBAdapter extends BaseAdapter {
 			);
 		}
 
-		this.checkClientLibVersion("nedb", "^1.8.0");
+		this.checkClientLibVersion("@seald-io/nedb", "^3.0.0");
 	}
 
 	/**

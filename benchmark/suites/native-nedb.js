@@ -1,6 +1,6 @@
 "use strict";
 
-const Datastore = require("nedb");
+const Datastore = require("@seald-io/nedb");
 
 const Fakerator = require("fakerator");
 const fakerator = new Fakerator();
